@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}">  </script>
+    <!-- <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}">  </script>
+     -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+    <div class="jumbotron text-center" style="background:black"  >
+      <h3 class="text-success">User Registration Page</h3>
+
+    </div>
+    <div class="container text-center" >
+      <form class="" action="" method="post">
+        {% csrf_token %}
+        {{user.as_p}}
+        <button type="submit" class="btn btn-primary" name="reg">Registration</button>
+      </form>
+
+
+
+    </div>
+
+  </body>
+</html>
