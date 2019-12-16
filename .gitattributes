@@ -2,4 +2,4 @@
 *.js linguist-detectable=false
 *.html linguist-detectable=false
 *.xml linguist-detectable=false
-*.js linguist-language=python-django
+*.js linguist-language=django
